@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="500.0" prefWidth="949.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbms.FXML9Controller">
+   <children>
+      <AnchorPane prefHeight="138.0" prefWidth="1012.0" style="-fx-background-color: #6d84b4;" />
+   
+      <Text fx:id="name" layoutX="268.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Barack Obama" wrappingWidth="210.6708984375">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      
+      <Text fx:id="unitno" layoutX="394.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unit 3" wrappingWidth="83.6708984375">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="id" layoutX="259.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BLR675" wrappingWidth="113.6708984375">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      
+      <Text fx:id="gender" layoutX="491.0" layoutY="179.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Male" />
+      <Button layoutX="52.0" layoutY="433.0" mnemonicParsing="false" onAction="#Backclick" style="-fx-background-color: blue;" text="BACK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="796.0" layoutY="429.0" mnemonicParsing="false" onAction="#Nextclick" style="-fx-background-color: blue;" text="NEXT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="Find" layoutX="708.0" layoutY="429.0" mnemonicParsing="false" onAction="#find" style="-fx-background-color: blue;" text="FIND" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="465.0" layoutY="238.0" mnemonicParsing="false" onAction="#onclick" prefHeight="25.0" prefWidth="26.0" style="-fx-background-radius: 40px; -fx-border-radius: 40px;" />
+      <TextField fx:id="numberfield" layoutX="282.0" layoutY="231.0" prefHeight="29.0" prefWidth="160.0" text="123456789">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+      <Button layoutX="465.0" layoutY="300.0" mnemonicParsing="false" onAction="#onclick1" prefHeight="25.0" prefWidth="26.0" style="-fx-background-radius: 40px; -fx-border-radius: 40px;" />
+      <TextArea fx:id="address" layoutX="282.0" layoutY="296.0" prefHeight="59.0" prefWidth="160.0" text="hhhhhhhhhhhhhhhhhhhhhhhhhhjjjjjjjjjjjjjjjjjjjjllllllllllllllllll">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+      <Text fx:id="unitname" layoutX="504.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unit 3" wrappingWidth="210.67089246958494">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Text>
+      <Button fx:id="save1" layoutX="504.0" layoutY="238.0" mnemonicParsing="false" onAction="#onclick3" prefHeight="25.0" prefWidth="26.0" style="-fx-background-radius: 40px; -fx-border-radius: 40px; -fx-background-color: green;" />
+      <Button fx:id="save2" layoutX="504.0" layoutY="300.0" mnemonicParsing="false" onAction="#onclick4" prefHeight="25.0" prefWidth="26.0" style="-fx-background-radius: 40px; -fx-border-radius: 40px; -fx-background-color: green;" />
+      <Text fx:id="airport" layoutX="207.0" layoutY="410.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="598.6708989292383">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="airport1" layoutX="224.0" layoutY="458.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="384.6708989292383">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <AnchorPane fx:id="pane3" layoutX="684.0" layoutY="136.0" prefHeight="234.0" prefWidth="243.0" style="-fx-background-color: grey;">
+         <children>
+            <ScrollPane fx:id="scroll" layoutX="22.0" layoutY="34.0" prefHeight="200.0" prefWidth="200.0">
+               <content>
+                  <VBox fx:id="root" prefHeight="198.0" prefWidth="197.0" />
+               </content>
+            </ScrollPane>
+            <Label layoutX="24.0" layoutY="6.0" prefHeight="25.0" prefWidth="72.0" text="FLIGHT NO" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="133.0" layoutY="6.0" prefHeight="25.0" prefWidth="72.0" text="DATE" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+  
+       </children>
+</AnchorPane>

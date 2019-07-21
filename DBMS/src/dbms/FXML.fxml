@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="595.0" prefWidth="949.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dbms.FXMLController">
+   <children>
+      <AnchorPane prefHeight="75.0" prefWidth="975.0" style="-fx-background-color: E11B22;" stylesheets="@fxml1.css">
+         <children>
+            <Button fx:id="AboutUs" layoutX="642.0" layoutY="2.0" mnemonicParsing="false" onAction="#Onaboutus" prefHeight="70.0" prefWidth="83.0" text="AboutUs">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="ContactUs" layoutX="725.0" layoutY="2.0" mnemonicParsing="false" onAction="#Oncontactus" prefHeight="70.0" prefWidth="95.0" text="ContactUs">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="Home" layoutX="573.0" layoutY="2.0" mnemonicParsing="false" onAction="#Onhome" prefHeight="70.0" prefWidth="69.0" text="Home">
+               <font>
+                  <Font name="SansSerif Bold" size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="70.0" layoutY="7.0" prefHeight="59.0" prefWidth="133.0" text="SkiConnect" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Italic" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="FAQ" layoutX="820.0" layoutY="3.0" mnemonicParsing="false" onAction="#Onfaq" prefHeight="70.0" prefWidth="69.0" text="FAQ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="AboutUspane" layoutX="22.0" layoutY="94.0" prefHeight="470.0" prefWidth="932.0">
+         <children>
+            <JFXTextArea layoutX="26.0" layoutY="9.0" prefHeight="447.0" prefWidth="895.0" text=" SkiConnect is a application built around making all airport related information easily accessible for both staff and fliers. The application was built from scratch by 3rd year Computer Science Students from PESIT-Bangalore South Campus  ">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </JFXTextArea>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Homepane" layoutX="88.0" layoutY="119.0" prefHeight="421.0" prefWidth="317.0" style="-fx-background-color: FFFF00;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" prefHeight="29.0" prefWidth="76.0" text="From">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="from" layoutX="52.0" layoutY="43.0" />
+            <Label fx:id="label" layoutX="49.0" layoutY="68.0" prefHeight="25.0" prefWidth="156.0" text="Select a appropriate field  " textFill="#ff0f0f" />
+            <Label layoutX="14.0" layoutY="87.0" prefHeight="29.0" prefWidth="76.0" text="To">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="to" layoutX="52.0" layoutY="116.0" />
+            <DatePicker fx:id="dp" layoutX="36.0" layoutY="219.0" prefHeight="31.0" prefWidth="95.0" />
+            <RadioButton fx:id="single" layoutX="25.0" layoutY="297.0" mnemonicParsing="false" onAction="#Singleradio" prefHeight="31.0" prefWidth="95.0" text="Single-Way" />
+            <Label layoutX="14.0" layoutY="172.0" prefHeight="31.0" prefWidth="117.0" text="Depart Date">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="label1" layoutX="49.0" layoutY="139.0" prefHeight="25.0" prefWidth="166.0" text="Select a appropriate field  " textFill="#ff0f0f" />
+            <Label fx:id="label13" layoutX="14.0" layoutY="264.0" prefHeight="25.0" prefWidth="140.0" text="Select a appropriate field  " textFill="#ff0f0f" />
+            <RadioButton fx:id="round" layoutX="157.0" layoutY="292.0" mnemonicParsing="false" onAction="#Roundradio" prefHeight="40.0" prefWidth="117.0" text="Round-Way" />
+            <Label fx:id="label131" layoutX="159.0" layoutY="265.0" prefHeight="25.0" prefWidth="149.0" text="Select a appropriate field  " textFill="#ff0f0f" />
+            <Label fx:id="arrival" layoutX="157.0" layoutY="172.0" prefHeight="31.0" prefWidth="117.0" text="Arrival Date">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="dp1" layoutX="168.0" layoutY="219.0" prefHeight="31.0" prefWidth="95.0" />
+            <Button fx:id="Submit" layoutX="192.0" layoutY="349.0" mnemonicParsing="false" onAction="#Submit" prefHeight="40.0" prefWidth="83.0" text="Submit" />
+            <Button fx:id="Back" layoutX="25.0" layoutY="349.0" mnemonicParsing="false" onAction="#Backclick" prefHeight="40.0" prefWidth="83.0" text="Back" />
+              
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="ContactUspane" layoutX="32.0" layoutY="104.0" prefHeight="470.0" prefWidth="932.0">
+         <children>
+            <JFXTextArea prefHeight="447.0" prefWidth="925.0" text="We have a 24/7 customer service ready to answer your queries. Please contact us on Twitter at @skiconnect or on our Instagram handle @skiconnect.  Lastly you can always call us on: 1800-5789-0000/1800-5790-0000/1800-5791-0000">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </JFXTextArea>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="FAQpane" layoutX="32.0" layoutY="104.0" prefHeight="470.0" prefWidth="932.0">
+         <children>
+            <JFXTextArea prefHeight="447.0" prefWidth="925.0" text="Q1: What is SkiConnect?                                                                                          &#10;Ans: SkiConnect is an application using which you can check any flight/staff related information.&#10;Q2:  Should I Login as a customer or as a staff?&#10;Ans: If you're a flier please proceed to the dedicated Customer Login window is meant for you to view the latest flight updates.  If you're part of the airport staff personnel, continue using the dedicated Staff Login window.                                                                                   Q3: I'm not able to select flying from a particular location?                   &#10;Ans: We are trying to bring SkiConnect to all our partners flying destinations. Soon you're source or destination will be included.                               &#10;Q4: I'm not able to add or delete my personal staff details?                                                 Ans: Removing and Adding new fields can only be done by the System Administrator.">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </JFXTextArea>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

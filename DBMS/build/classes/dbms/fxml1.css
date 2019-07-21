@@ -1,0 +1,18 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+
+    .button{
+        -fx-background-color:#E11B22;
+        -fx-border-color:#E11B22;
+    }
+    .button:hover{
+        -fx-text-fill:#FFFFFF;
+        
+    }
+    .button:pressed{
+        -fx-background-color:#EC1C24;
+    }
+
+
